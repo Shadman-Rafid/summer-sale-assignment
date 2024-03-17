@@ -5,20 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale Assignment</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6303cc5bd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="flex gap-8 p-12 mx-52">
-        <div class="my-72">
-            <h4 class="text-xl">---SALE FEVER---</h4>
-            <h2 class="text-5xl font-bold">Purchase TK 200 or<br>above & get <span>20% off</span></h2>
-            <div class="flex gap-2">
-                <p>Use Promo Code</p>
-                <button class="bg-pink-500 text-white px-4 py-1 rounded font-medium">SELL200</button>
+<body class="bg-neutral-100">
+    <header class="flex gap-8 p-12 bg-amber-50">
+        <div class="my-52 ms-60 me-14">
+            <h4 id="banner-sale" class="text-3xl text-center mb-12 ms-4 me-8 font-medium">---SALE FEVER---</h4>
+            <h2 id="banner-text" class="text-6xl font-bold mb-20">
+                <p class="mb-2">Purchase TK 200 or</p>
+                <p>above & get <span id="banner-span">20% off</span></p>
+            </h2>
+            <div class="flex gap-4 mx-28">
+                <p class="text-2xl font-medium mt-3" id="banner-promo">Use Promo Code</p>
+                <button id="btn-banner" class="text-white text-2xl px-6 py-3 rounded-lg font-medium">SELL200</button>
             </div>
         </div>
-        <div>
+        <div class="mt-4">
             <img src="images/Summer 1.png" alt="" srcset="">
         </div>
     </header>
+    <main class="flex gap-8 ms-56 mt-32">
+        <!-- product section -->
+        <section>
+            <h2 class="text-5xl font-medium mb-8">Kitchenware</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div id="card-spoon" class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="spoonCard()">
+                    <figure><img class="my-5 mx-6 bg-stone-100 px-20 py-8 rounded-lg" src="images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">K. Accessories</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="spoon-price">39.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="plateCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-16 py-7 rounded-lg" src="images/prod2.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">K. Accessories</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="plate-price">25.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="cookerCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-16 py-8 rounded-lg" src="images/prod3.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Home Cooker</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="cooker-price">49.00</span> TK</p>
+                    </div>
+                </div>   
+            </div>           
+            <h2 class="text-5xl font-medium mb-8 mt-16">Sportswear</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="blackCapCard()">
+                    <figure><img class="my-5 mx-6 bg-stone-100 px-14 py-9 rounded-lg" src="images/prod4.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Sports Black Cap</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="cap-price">49.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="jerseyCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-20 py-7 rounded-lg" src="images/prod5.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Full Jersey Set</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="jersey-price">69.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="shoeCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-16 py-7 rounded-lg" src="images/prod6.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Sports Shoe</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="shoe-price">159.00</span> TK</p>
+                    </div>
+                </div>   
+            </div>           
+            <h2 class="text-5xl font-medium mb-8 mt-16">Furniture</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="relaxChairCard()">
+                    <figure><img class="my-5 mx-6 bg-stone-100 px-16 py-6 rounded-lg" src="images/prod7.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-regular fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Single Relax Chair</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="relaxChair-price">185.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="childPlayCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-20 py-7 rounded-lg" src="images/prod8.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Childern Play</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="childPlay-price">299.00</span> TK</p>
+                    </div>
+                </div>   
+                <div class="card card-compact w-80 bg-white shadow-xl rounded-lg" onclick="sofaCard()">
+                    <figure><img class=" my-5 mx-5 bg-stone-100 px-16 py-7 rounded-lg" src="images/prod9.png" alt="Shoes" /></figure>
+                    <div class="card-body mb-5">
+                        <h2 class="text-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                        </h2>
+                        <h2 class="card-title text-xl font-bold text-center">Flexible Sofa</h2>
+                        <p class="text-center text-xl text-gray-500"><span id="sofa-price">339.00</span> TK</p>
+                    </div>
+                </div>   
+            </div>           
+        </section>
+        <!-- coupon & purchase section -->
+        <section class="mt-20">
+           <div class="bg-white p-7 rounded-lg mb-6">
+                <h2 id="have-coupon" class="text-2xl font-medium mb-4">Have Coupon?</h2>
+                <div class="flex">
+                    <input class="border border-2 ps-4 text-xl font-medium rounded-lg w-60" type="text" name="" id="" placeholder="Coupon Code">
+                    <button id="btn-coupon" class="text-white text-xl px-6 py-3 rounded-lg font-medium">Apply</button>
+                </div>
+           </div>
+           <div class="bg-white p-7 rounded-lg mb-6">
+                <h2 id="have-coupon" class="text-2xl text-center font-medium underline underline-offset-4">Product List</h2>
+                <br> <br>
+                <hr>
+                <h2 id="have-coupon" class="text-2xl font-medium mt-4">Total price: <span class="text-gray-500"><span id="total-price">00.00</span> TK</span></h2>
+                <h2 id="have-coupon" class="text-2xl font-medium mt-4">Discount: <span class="text-gray-500">51.40 TK</span></h2>
+                <h2 id="have-coupon" class="text-2xl font-medium my-5">Total: <span class="text-gray-500">205.60 TK</span></h2>
+                <hr>
+                <button id="btn-purchase" class="text-white text-xl mt-5 mx-8 px-16 py-3 rounded-lg font-medium">Make Purchase</button>
+           </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

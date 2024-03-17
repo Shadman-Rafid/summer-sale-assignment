@@ -1,0 +1,17 @@
+#banner-text {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    }
+#banner-sale, #btn-banner, #banner-promo, #btn-coupon, #have-coupon {
+    font-family: 'Work Sans', sans-serif; 
+    font-optical-sizing: auto;
+}
+#btn-banner, #btn-purchase {
+    background-color: rgb(240, 50, 151);
+    color: white;
+}
+#banner-span {
+    color: rgb(240, 50, 151);
+}
