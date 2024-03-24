@@ -8,7 +8,7 @@
     font-family: 'Work Sans', sans-serif; 
     font-optical-sizing: auto;
 }
-#btn-banner, #btn-purchase {
+#btn-banner, #btn-purchase, #btn-coupon {
     background-color: rgb(240, 50, 151);
     color: white;
 }
